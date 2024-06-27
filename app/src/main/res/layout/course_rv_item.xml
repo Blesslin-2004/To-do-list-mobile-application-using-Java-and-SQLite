@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/rectangle"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <!--text view for our course name-->
+        <TextView
+            android:id="@+id/idtaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Task:"
+            android:textSize="17dp"
+            android:fontFamily="@font/opensans"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/timestamp_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_marginHorizontal="15dp"
+            android:textColor="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/deleteIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle"
+            android:src="@drawable/deleteforever" />
+
+        <ImageButton
+            android:id="@+id/doneIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="289dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle"
+            android:src="@drawable/done" />
+
+        <ImageButton
+            android:id="@+id/editIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="250dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle"
+            android:src="@drawable/edit" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

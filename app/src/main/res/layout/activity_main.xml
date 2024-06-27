@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardElevation="10dp"
+      android:background="@drawable/rectangle"
+      app:cardBackgroundColor="@color/colorPrimary">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="TO-DOs"
+          android:textSize="20dp"
+          android:fontFamily="@font/opensans"
+          android:padding="10dp"
+          android:textStyle="bold"
+          android:elevation="4dp"
+          android:textColor="@color/white"
+          />
+  </androidx.cardview.widget.CardView>
+
+
+
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/idRVCourses"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="70dp">
+
+
+       </androidx.recyclerview.widget.RecyclerView>
+
+
+    <ImageButton
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/circle"
+        android:src="@drawable/add"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:alpha="0.1"
+        android:text="Your To-Do Here"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>

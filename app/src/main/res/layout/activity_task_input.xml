@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskInputActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:background="@drawable/rectangle"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/back" />
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="250dp"
+        android:layout_marginHorizontal="20dp">
+
+
+        <TextView
+            android:id="@+id/taskTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Task:"
+            android:textSize="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/opensans"
+            />
+
+        <EditText
+            android:id="@+id/taskET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="80dp"
+            android:hint="Enter the task"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="250dp"
+            android:background="@drawable/rectangle"
+            android:text="ADD"
+            android:layout_marginBottom="20dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
